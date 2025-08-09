@@ -1,68 +1,93 @@
-# FUTURE_ML_2
+# 📊 Customer Churn Prediction – Task 2 (Future Interns)
 
-Customer Churn Prediction – Machine Learning Project
-This repository contains a complete machine learning pipeline to predict customer churn. It is designed to help businesses identify customers who are likely to leave and take proactive measures to retain them.
+This project predicts customer churn using a real-world telecom dataset. It includes complete data preprocessing, feature engineering, visualization, class balancing using SMOTE, and evaluation of three powerful models: **Logistic Regression**, **Random Forest**, and **XGBoost**.
 
-Key Features
-Data Preprocessing
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MohammedTaha-751/FUTURE_ML_2/blob/main/Churn_Prediction_Task2.ipynb)
 
-Handling missing values and inconsistent data.
+---
 
-Encoding categorical features using Label Encoding / One-Hot Encoding.
+## 🚀 Features
+- Cleaned and prepared dataset from real-world telecom churn data  
+- Exploratory Data Analysis (EDA) using Seaborn and Matplotlib  
+- Feature engineering (e.g., tenure grouping, total services count)  
+- One-hot encoding & label encoding  
+- Class imbalance handled using **SMOTE**  
+- Trained and evaluated:
+  - Logistic Regression  
+  - Random Forest Classifier  
+  - XGBoost Classifier  
+- AUC-ROC curve comparison  
+- XGBoost feature importance visualization  
 
-Normalizing and scaling numerical features for model efficiency.
+---
 
-Exploratory Data Analysis (EDA)
+## 🧰 Tech Stack
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- XGBoost  
+- imbalanced-learn (SMOTE)  
+- Matplotlib & Seaborn  
 
-Distribution analysis of churn vs. non-churn customers.
+---
 
-Correlation analysis to identify important features.
+## 📈 Model Evaluation
+Each model was evaluated using:
+- Classification report (Precision, Recall, F1-score)  
+- ROC-AUC score  
+- ROC Curve  
 
-Visualizations to understand customer demographics, tenure, and usage patterns.
+---
 
-Model Building & Training
+## 📎 How to Use
 
-Implemented multiple classification algorithms:
+1. Open the notebook in Google Colab:  
+   [Click here to run in Colab](https://colab.research.google.com/github/MohammedTaha-751/FUTURE_ML_2/blob/main/Churn_Prediction_Task2.ipynb)
 
-Logistic Regression
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Decision Tree Classifier
+3. Run the notebook cells step by step to:
+   - Load and clean the dataset  
+   - Explore and visualize key patterns  
+   - Train models and evaluate performance  
 
-Random Forest Classifier
+---
 
-XGBoost Classifier
+## 📂 Dataset Source
+The dataset used in this project is from the [Telco Customer Churn Dataset](https://github.com/MohElaghory/Telco-Customer-Churn), which contains customer demographics, account information, and service usage patterns.
 
-Hyperparameter tuning for optimal performance.
+---
 
-Model Evaluation
+## 🔍 Key Insights
+- **Long-term contracts** significantly reduce churn likelihood.  
+- Customers with more add-on services (like Tech Support, Online Backup) are **less likely** to churn.  
+- **MonthlyCharges** and **tenure** have a strong correlation with churn behavior.
 
-Accuracy, Precision, Recall, and F1-score.
+---
 
-ROC Curve and AUC score for overall model performance.
+## 🎯 Internship Context
+This project is part of **Task 2 – Churn Prediction System** in the **Future Interns Machine Learning Internship**. The internship emphasizes hands-on learning in machine learning through self-paced projects and real-world problem-solving.
 
-Confusion Matrix to evaluate prediction results.
+---
 
-Insights & Recommendations
+## ✍️ Author
+**Mohammed Taha Ahamed**  
+B.E. Information Science & Engineering  
+HKBK College of Engineering  
+2022 Batch
 
-Identification of key factors driving churn.
+---
 
-Suggestions for retention strategies based on analysis.
+## 📄 License
+This project is open-source and free to use for academic and learning purposes.
 
-Tech Stack
-Languages & Libraries: Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost
+---
 
-Environment: Jupyter Notebook
-
-Usage
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/Churn_Prediction_Task2.git
-Open the notebook in Jupyter or Google Colab.
-
-Run the cells sequentially to reproduce results.
-
-If you want, I can also prepare a README.md file for GitHub** with headings, badges, and screenshots of your notebook results so it looks visually appealing. That way, your repo will look more professional to recruiters and collaborators.
-
+## 🙌 Acknowledgements
+Thanks to:
+- Future Interns for the internship opportunity  
+- The creators of the Telco dataset  
+- All open-source contributors to the libraries used in this project
