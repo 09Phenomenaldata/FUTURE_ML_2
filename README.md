@@ -74,7 +74,7 @@ This project is part of **Task 2 – Churn Prediction System** in the **Future I
 ---
 
 ## ✍️ Author
-**Mohammed Taha Ahamed**  
+**Mohamed Zeeshan**  
 B.E. Information Science & Engineering  
 HKBK College of Engineering  
 2022 Batch
